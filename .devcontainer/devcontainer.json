@@ -1,0 +1,15 @@
+{
+    "name": "Tutor Open edX",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "docker-in-docker": "latest"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": []
+      }
+    },
+    // Optionally, set up forwardPorts if you want to pre-configure port forwarding:
+    "forwardPorts": [80, 8000, 8001]
+  }
