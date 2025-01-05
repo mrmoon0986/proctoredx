@@ -1,15 +1,17 @@
 {
-    "name": "Tutor Open edX",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-      "docker-in-docker": "latest"
-    },
-    "customizations": {
-      "vscode": {
-        "settings": {},
-        "extensions": []
-      }
-    },
-    // Optionally, set up forwardPorts if you want to pre-configure port forwarding:
-    "forwardPorts": [80, 8000, 8001]
+  "name": "Tutor Open edX",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "docker-in-docker": "latest",
+    // Add Python feature
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.9"
+    }
+  },
+  "forwardPorts": [80, 8000, 8001],
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
   }
+}
